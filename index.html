@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Originals | Netflix</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="logo">NETFLIX</div>
+
+        <nav class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#historia">História</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#temporadas">Temporadas</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-button" id="searchButton" aria-label="Buscar">
+                ⌕
+            </button>
+
+            <button class="profile-button" aria-label="Perfil">
+                👤
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">UMA SÉRIE ORIGINAL</span>
+
+                <h1>THE<br>ORIGINALS</h1>
+
+                <p class="hero-description">
+                    A família original de vampiros retorna a Nova Orleans,
+                    onde antigas alianças, inimigos poderosos e segredos
+                    do passado ameaçam destruir tudo o que construíram.
+                </p>
+
+                <div class="hero-info">
+                    <span>2013</span>
+                    <span>5 temporadas</span>
+                    <span class="age-rating">16</span>
+                    <span>Drama • Fantasia • Terror</span>
+                </div>
+
+                <div class="hero-buttons">
+
+                    <button class="btn btn-primary" id="playButton">
+                        ▶ Assistir
+                    </button>
+
+                    <button class="btn btn-secondary" id="infoButton">
+                        ⓘ Mais informações
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom"></div>
+
+        </section>
+
+
+        <!-- ================= CONTEÚDO ================= -->
+
+        <div class="page-content">
+
+
+            <!-- ================= HISTÓRIA ================= -->
+
+            <section class="section" id="historia">
+
+                <div class="section-heading">
+
+                    <h2>A história dos Originais</h2>
+
+                    <p>
+                        Uma família. Mil anos de segredos.
+                        Uma cidade que nunca esquece.
+                    </p>
+
+                </div>
+
+                <div class="story-container">
+
+                    <div class="story-image">
+
+                        <img
+                            src="imagens/familia.jpg"
+                            alt="Família Mikaelson"
+                            onerror="this.src='imagens/banner.jpg'"
+                        >
+
+                    </div>
+
+                    <div class="story-text">
+
+                        <p>
+                            Séculos antes dos acontecimentos de The Vampire Diaries,
+                            os Mikaelson se tornaram os primeiros vampiros da história.
+                            Imortais, poderosos e incapazes de morrer facilmente,
+                            eles atravessaram gerações carregando uma promessa:
+                            permanecerem juntos para sempre.
+                        </p>
+
+                        <p>
+                            Porém, a eternidade não trouxe paz. Traições,
+                            perseguições e conflitos internos transformaram a
+                            família em uma das forças mais temidas do mundo sobrenatural.
+                        </p>
+
+                        <p>
+                            Quando Klaus retorna a Nova Orleans, descobre que a cidade
+                            que sua família ajudou a construir está sob o controle
+                            de Marcel Gerard, seu antigo protegido.
+                        </p>
+
+                        <p>
+                            O nascimento de Hope, filha de Klaus e Hayley,
+                            muda completamente o destino da família.
+                            Agora, os Mikaelson precisam enfrentar inimigos,
+                            profecias e seus próprios demônios para proteger
+                            a última esperança de sua linhagem.
+                        </p>
+
+                        <button class="text-button" id="storyButton">
+                            Conhecer toda a história →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PERSONAGENS ================= -->
+
+            <section class="section" id="personagens">
+
+                <div class="section-heading">
+
+                    <h2>Personagens principais</h2>
+
+                    <p>
+                        Conheça os membros da família Mikaelson e seus aliados.
+                    </p>
+
+                </div>
+
+                <div class="search-container">
+
+                    <input
+                        type="text"
+                        id="characterSearch"
+                        placeholder="Buscar personagem..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+                <div class="characters-grid" id="charactersGrid"></div>
+
+            </section>
+
+
+            <!-- ================= TEMPORADAS ================= -->
+
+            <section class="section" id="temporadas">
+
+                <div class="section-heading">
+
+                    <h2>Temporadas</h2>
+
+                    <p>
+                        A trajetória da família ao longo da série.
+                    </p>
+
+                </div>
+
+                <div class="seasons-grid">
+
+                    <article class="season-card">
+
+                        <span>01</span>
+
+                        <h3>Temporada 1</h3>
+
+                        <p>
+                            Klaus retorna a Nova Orleans e descobre
+                            que Marcel controla a cidade.
+                        </p>
+
+                        <button class="season-button" data-season="1">
+                            Ver detalhes
+                        </button>
+
+                    </article>
+
+                    <article class="season-card">
+
+                        <span>02</span>
+
+                        <h3>Temporada 2</h3>
+
+                        <p>
+                            A família enfrenta novos inimigos,
+                            antigas maldições e a ameaça de Dahlia.
+                        </p>
+
+                        <button class="season-button" data-season="2">
+                            Ver detalhes
+                        </button>
+
+                    </article>
+
+                    <article class="season-card">
+
+                        <span>03</span>
+
+                        <h3>Temporada 3</h3>
+
+                        <p>
+                            Uma profecia coloca os Mikaelson
+                            diante de seu destino mais perigoso.
+                        </p>
+
+                        <button class="season-button" data-season="3">
+                            Ver detalhes
+                        </button>
+
+                    </article>
+
+                    <article class="season-card">
+
+                        <span>04</span>
+
+                        <h3>Temporada 4</h3>
+
+                        <p>
+                            Cinco anos depois, a família precisa
+                            se reunir para salvar Hope.
+                        </p>
+
+                        <button class="season-button" data-season="4">
+                            Ver detalhes
+                        </button>
+
+                    </article>
+
+                    <article class="season-card">
+
+                        <span>05</span>
+
+                        <h3>Temporada 5</h3>
+
+                        <p>
+                            O último capítulo da família Mikaelson
+                            e o destino de Klaus e Elijah.
+                        </p>
+
+                        <button class="season-button" data-season="5">
+                            Ver detalhes
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= FRASE ================= -->
+
+            <section class="quote-section">
+
+                <div class="quote-overlay"></div>
+
+                <div class="quote-content">
+
+                    <span>THE ORIGINALS</span>
+
+                    <h2>
+                        “Sempre e para sempre.”
+                    </h2>
+
+                    <p>
+                        A promessa que uniu uma família
+                        durante mil anos.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= MODAL PERSONAGEM ================= -->
+
+    <div class="modal" id="characterModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal">
+                ×
+            </button>
+
+            <div class="modal-image">
+
+                <img id="modalImage" src="" alt="">
+
+            </div>
+
+            <div class="modal-info">
+
+                <span id="modalRole"></span>
+
+                <h2 id="modalName"></h2>
+
+                <p id="modalDescription"></p>
+
+                <div class="modal-tags">
+
+                    <span id="modalStatus"></span>
+                    <span id="modalSpecies"></span>
+
+                </div>
+
+                <button class="btn btn-primary" id="modalAction">
+                    ▶ Explorar personagem
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL INFORMAÇÕES ================= -->
+
+    <div class="modal" id="infoModal">
+
+        <div class="modal-content simple-modal">
+
+            <button class="close-modal" id="closeInfoModal">
+                ×
+            </button>
+
+            <span class="hero-label">THE ORIGINALS</span>
+
+            <h2>Sobre a série</h2>
+
+            <p>
+                The Originals acompanha a família Mikaelson,
+                os primeiros vampiros do mundo, enquanto eles
+                lutam para proteger sua família, sua cidade
+                e a nova geração de sobrenaturais.
+            </p>
+
+            <p>
+                A série combina drama familiar, fantasia,
+                romance, terror e conflitos políticos
+                em uma Nova Orleans repleta de magia.
+            </p>
+
+            <div class="modal-tags">
+
+                <span>2013–2018</span>
+                <span>5 temporadas</span>
+                <span>92 episódios</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL TEMPORADA ================= -->
+
+    <div class="modal" id="seasonModal">
+
+        <div class="modal-content simple-modal">
+
+            <button class="close-modal" id="closeSeasonModal">
+                ×
+            </button>
+
+            <span class="hero-label">THE ORIGINALS</span>
+
+            <h2 id="seasonModalTitle"></h2>
+
+            <p id="seasonModalDescription"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= RODAPÉ ================= -->
+
+    <footer>
+
+        <div class="footer-logo">NETFLIX</div>
+
+        <p>
+            Projeto inspirado na série The Originals.
+        </p>
+
+        <p class="copyright">
+            Desenvolvido com HTML, CSS e JavaScript.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
